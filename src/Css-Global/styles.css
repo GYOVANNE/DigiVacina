@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;700&display=swap');
+html {
+    padding: 0;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    background-color: rgb(228, 236, 248);
+    color: rgb(128, 128, 128);
+}
+body{
+    transition: .3s;
+    /* height: 100%; */
+}
+#main{
+    transition: margin-left .5s;
+    /* height: 90vh; */
+    padding: 0;
+}
+ .column-20 {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+  .column-25 {
+    float: left;
+    width: 25%;
+    padding:10px;
+  }
+  .column-40 {
+    float: left;
+    width: 40%;
+    padding: 0 10px;
+  }
+  .column-50 {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+  .column-60 {
+    float: left;
+    width: 60%;
+    padding: 0 10px;
+  }
+  .column-80 {
+    float: left;
+    width: 80%;
+    padding: 0 10px;
+  }
+  .column-100 {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+  }
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 10px 10px 0 -10px;}
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+@media screen and (max-width: 710px) {
+    
+    .column-20 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .column-25 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .column-40 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .column-50 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .column-60 {
+      float: left;
+      width: 100%;
+      padding: 0 10px;
+    }
+    .column-80 {
+      float: left;
+      width: 100%;
+      padding: 0 10px;
+    }
+    .column-100{
+      float: left;
+      width: 100%;
+      padding: 0 10px;
+    }
+    .ocult{
+      display: none !important;
+    }
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgb(199, 199, 199); 
+  border-radius: 20px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: rgb(218, 218, 218); 
+  border-radius: 20px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 160, 160); 
+  }
+  
+
+  *{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dashed #5f5f5f;
+    padding: 5px 0;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 18px;
+    color: rgb(56, 56, 56);
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color:rgb(56, 56, 56);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* loading */
+#main .loading{
+  background-color: rgba(0, 0, 0, 0.233);
+  color: aliceblue;
+  position: fixed;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+#main .loading .lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+#main .loading .lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(40, 62, 74) transparent transparent transparent;
+}
+#main .loading .lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+#main .loading .lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+#main .loading .lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ocult-text{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Primary colors */
+.primary-color {
+  background-color: rgb(228, 236, 248);
+}
+/* Primary colors */
+
+/* Secundary colors */
+.secundary-color {
+  background-color: rgb(255, 255, 255);
+}
+/* Primary colors */
+
+b {
+  color: rgb(23, 43, 77);
+}
+
+.color-title {
+  color: var(--color-font-primary)!important;
+}
+.color-title-content {
+  color: var(--color-font-secundary) !important;
+}
+
+:root{
+    --color-font-primary: rgb(0, 82, 204);
+    --color-font-secundary: rgb(23, 43, 77);
+}
+
+*{
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+} 
+#main .sc-ifAKCX {
+  /* background-color: red; */
+  box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.2);
+}

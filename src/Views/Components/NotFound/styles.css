@@ -1,0 +1,14 @@
+.main-page-not-found {
+  padding: 10px;
+}
+.main-page-not-found img {
+  width: 10rem;
+  display: flex;
+  margin: 0 auto;
+  
+}
+.main-page-not-found p {
+  font-size: 5vw;
+  text-align: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,97 @@
+.main-home{
+    margin: 20px;
+}
+
+#main .main-home a{
+  border: none;  
+}
+
+.main-home .card-search {
+    box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.150);
+    margin: 10px;
+    max-width: 100%;
+    min-height: 30px;
+    border-radius: 10px;
+}
+#main .main-home .row {margin: 0;}
+
+#main .main-home .card-home-40 {
+    box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.150);
+    width: 100%;
+    min-height:25rem;
+    max-height:25rem;
+    overflow-y: auto;
+    border-radius: 10px;
+    color: var(--color-font-primary);
+    transition: 0.3s;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 0.7rem;
+}
+#main .main-home .card-home-40 .card-content {
+    transition: 0.2s;
+    margin: 20px 0;
+}
+#main .main-home .card-home-40 .title p {
+    color: var(--color-font-primary);
+    font-size: 1rem;
+}
+#main .main-home .card-home-40 span{
+    color: var(--color-font-secundary) !important;
+    font-size: 0.8rem;
+}
+#main .main-home .card-home-40 a{
+    border: none !important;
+    text-decoration: none;
+    cursor: pointer;
+    width: 10rem;
+    padding: 0 20px;
+    height: 1rem;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+#main .main-home .card-home-40 a:hover {
+    background-color: var(--color-font-primary);
+    width: 10rem;
+    color: white;
+}
+#main .main-home .card-home-50 {
+    box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.150);
+    width: 100%;
+    height:25rem;
+    border-radius: 10px;
+    color: var(--color-font-secundary);
+    transition: 0.3s;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+#main .main-home .title-city {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--color-font-primary);
+}
+#main .main-home .content-city {
+    text-align: left;
+    padding: 0 4rem;
+}
+#main .main-home .card-home-40 p, #main .main-home .card-home-40 span{
+    color: var(--color-font-secundary);
+}
+#addUser {
+    width: 7rem;
+    padding: 3rem 1.5rem 0 1.5rem;
+    display: flex;
+    margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+    #main .main-home .card-search .search-title {
+        padding: 0;
+        margin: 0;
+        font-size: 0.6em;
+        /* width: 90%; */
+    }
+}

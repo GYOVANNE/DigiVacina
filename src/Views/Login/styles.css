@@ -1,0 +1,89 @@
+.main-login {
+    background-image: url('../../assets/background.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.main-login .card-login {
+    width: 20rem;
+    background: #000;
+    opacity: 0.6;
+    padding: 1rem 0;
+    border-radius: 15px;
+    text-align: center;
+    white-space: pre-line;
+    overflow: hidden;
+}
+
+.main-login .button-login {
+    background: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+    color: white;
+    font-size: 18px;
+    margin-top: 1.5rem;
+    width: 18rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.main-login input:focus,
+.main-login select:focus,
+.main-login textarea:focus,
+.main-login button:focus {
+    outline: none;
+}
+.main-login input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+    padding: 0rem 1rem 0rem 0.5rem;
+    width: 80%;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    margin-top: 1.7rem;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+ 
+:-moz-placeholder {
+   color: white;  
+}
+::-moz-placeholder {  
+   color: white;  
+}
+ 
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+.main-login input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px black inset;
+    -webkit-text-fill-color: #FFFFFF; 
+}
+
+.main-login a{
+    color: white;
+    border: none;
+}
+
+.main-login a:active:hover:checked:focus{
+    color: white;
+    border: none;
+}
+.main-login input{
+    caret-color:rgb(255, 255, 255);
+}

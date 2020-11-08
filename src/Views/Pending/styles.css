@@ -1,0 +1,64 @@
+.main-pending{
+    margin: 20px;
+}
+
+.main-pending .card-search {
+    box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.150);
+    margin: 10px;
+    max-width: 100%;
+    min-height: 30px;
+    border-radius: 10px;
+}
+#main .main-pending a{
+    color: var(--color-font-primary);
+    border: none;
+    text-decoration: none;
+}
+
+#main .main-pending .row{
+    margin: 10px 0;
+}
+
+#main .main-pending .card-pending-20 {
+    box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.150);
+    width: 100%;
+    height:10rem;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+#main .main-pending .card-pending-20 p{
+    margin: 10px 0;
+}
+#main .main-pending .card-pending-20 hr{
+    margin: 5px 5px 0 5px;
+    border-radius: 10px;
+    border: 3px solid;
+    background-color: rgb(255, 153, 0);
+}
+#main .main-pending .card-pending-20 .p-title{
+    color: var(--color-font-primary);
+    font-weight: bold;
+}
+#main .main-pending .card-pending-20 .p-description{
+    color: var(--color-font-secundary);
+}
+#main .main-pending .card-pending-20 .p-dose{
+    color: rgb(255, 153, 0);
+}
+#main .main-pending .card-pending-20:hover {
+    margin: -10px 0;
+    height: 11rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #main .main-pending .card-search .search-title {
+        padding: 0;
+        margin: 0;
+        font-size: 0.6em;
+        /* width: 90%; */
+    }
+}
